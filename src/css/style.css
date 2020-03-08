@@ -27,7 +27,7 @@
     width: 10000px;
     height: 10000px;
     background-color: #fff;
-    border-radius: 10000px 0;
+    border-radius: 10000px 0 0 0;
 }
 .g-header > .info {
     position: relative;
@@ -103,6 +103,11 @@
     margin: 10px 20px;
     line-height: 36px;
 }
+/* edu */
+.edu_table {
+    width: 80%;
+}
+/* edu end */
 /* project */
 .m-project .date {
     width: 150px;
@@ -115,13 +120,12 @@
 .skill {
     list-style: disc inside;
 }
-.skill > li {
-
-    /* line-height: 36px; */
-}
-
-
 /* skill end */
+/* prize */
+.prize {
+    width: 80%;
+}
+/* prize end */
 /** g-content end **/
 
 
@@ -157,27 +161,212 @@
 .u-bold { /* 加粗 */
     font-weight: 800;
 }
+/* table */
+.u-table {
+    display: table;
+    border-collapse: separate;
+}
+.u-tr {
+    display: table-row;
+}
+.u-td {
+    display: table-cell;
+}
+
+
+/* 大型设备（大台式电脑，1200px 起）设计宽度=1000 */
+@media screen and (min-width: 1200px) { 
 
 
 
+}
 
-@media screen and (min-width:1200px) { 
-    
-} /* 大型设备（大台式电脑，1200px 起）设计宽度=1000 */
+/* 中型设备（台式电脑，992px 起）设计宽度=900 */
+@media screen and (min-width: 992px) and (max-width: 1199px) { 
+    .g-page {
+        width: 900px;
+    }
+    .prize {
+        width: 90%;
+    }
+}
 
-@media screen and (min-width:992px) { 
-    
-} /* 中型设备（台式电脑，992px 起）设计宽度=768 */
+/* 小型设备（平板电脑，768px 起）设计宽度=700 */
+@media screen and (min-width:768px) and (max-width: 991px) { 
+    .g-page {
+        width: 700px;
+    }
+    .g-content {
+        padding: 0 30px;
+    }
+    /* g-header */
+    .g-header {
+        padding: 0 60px;
+    }
+    .g-header::after {
+        display: none;
+    }
+    .g-header > .info {
+        margin-top: 30px;
+    }
+    .g-header > .head {
+        position: absolute;
+        right: 60px;
+        width: 160px;
+        height: 160px;
+    }
+    .g-header > .head > img {
+        width: 160px;
+        height: 160px;
+    }
+    .g-header > .contact > div:first-child {
+        float: none;
+    }
+    .g-header > .contact > div:last-child {
+        float: none;
+        display: block;
+        margin-top: 10px;
+    }
+    /* g-header end */
 
-@media screen and (min-width:768px) { 
-    
-} /* 小型设备（平板电脑，768px 起）设计宽度=640 */
+    .prize {
+        width: 650px;
+        margin-left: -20px;
+    }
+}
 
-@media screen and (min-width:480px) { 
-    
-} /* 超小设备（手机，小于 768px）设计宽度=100% */
+/* 超小设备（手机，小于 768px）设计宽度=100% */
+@media screen and (max-width: 767px){ 
+    .g-page {
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .g-content {
+        padding: 0 20px;
+    }
+    /* g-header */
+    .g-header {
+        position: static;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        height: 360px;
+    }
+    .g-header::after {
+        display: none;
+    }
+    .g-header > .info {
+        position: static;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+    .g-header .author {
+        font-size: 38px;
+        font-weight: 600;
+    }
+    .g-header .age {
+        position: static;
+        font-size: 16px;
+    }
+    .g-header > .job {
+        display: none;
+    }
+    .g-header > .contact {
+        width: auto;
+    }
+    .g-header > .head {
+        position: static;
+        order: -1;
+        width: 160px;
+        height: 160px;
+    }
+    .g-header > .head > img {
+        width: 160px;
+        height: 160px;
+    }
+    .g-header > .contact > div:first-child {
+        float: none;
+    }
+    .g-header > .contact > div:last-child {
+        float: none;
+        display: block;
+        margin-top: 6px;
+    }
+    .g-header > .contact i {
+        margin-right: 10px;
+    }
+    /* g-header end */
+    /* g-content */
+    .m-container > .header > .title {
+        width: 60%;
+    }
+    /* edu_table */
+    .edu_table,
+    .edu_table div {
+        display: block;
+    }
+    .edu_table > div {
+        position: static;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .edu_table > div > div {
+        margin-left: 10px;
+    }
+    /* edu_table end */
+    /* project */
+    .m-project {
+        border-bottom: 1px solid #DCDFE6;
+    }
+    .m-project:last-child {
+        border: none;
+    }
+    /* project end */
+    /* prize */
+    .prize,
+    .prize div {
+        display: block;
+    }
+    .prize > div {
+        border-bottom: 1px solid #DCDFE6;
+    }
+    .prize > div:last-child {
+        border: none;
+    }
+    .prize > div > div:nth-child(3) {
+        display: none;
+    }
+    /* prize end */
+    /* g-content end */
 
+    .prize {
+        width: 100%;
+    } /* 还是放不下 */
+}
+
+/* 打印 */
 @media print {
-
-} /* 打印 */
+    .g-page {
+        margin: 0;
+        width: 1200px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .g-header::after { 
+        top: 185px;
+    }
+    .g-header > .info {
+        margin-top: 30px;
+    }
+}
 
