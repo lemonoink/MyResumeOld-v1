@@ -1,0 +1,183 @@
+.g-page {
+    margin: 20px auto;
+    padding-bottom: 40px;
+    width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #9d9d9d;
+    overflow: hidden;
+}
+
+/** g-header **/
+.g-header {
+    position: relative;
+    padding: 0 100px;
+    width: auto;
+    height: 260px;
+    color: #fff;
+    background: #2B32B2;
+    background: linear-gradient(to top, #1488CC, #2B32B2);
+    overflow: hidden;
+}
+.g-header::after { /* background */
+    position: absolute;
+    right: 0px;
+    top: 210px;
+    z-index: 1;
+    content: '';
+    width: 10000px;
+    height: 10000px;
+    background-color: #fff;
+    border-radius: 10000px 0;
+}
+.g-header > .info {
+    position: relative;
+    margin-top: 40px;
+}
+.g-header .author {
+    font-size: 46px;
+    font-weight: 600;
+}
+.g-header .age {
+    position: absolute;
+    bottom: 10px;
+    left: 150px;
+    font-size: 16px;
+}
+.g-header > .job {
+    margin-top: 16px;
+    font-size: 20px;
+}
+.g-header > .contact {
+    margin-top: 16px;
+    width: 450px;
+    font-size: 18px;
+}
+.g-header > .head {
+    position: absolute;
+    right: 100px;
+    top: 40px;
+    z-index: 10;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    box-shadow: 0 0 5px #9d9d9d;
+    overflow: hidden;
+}
+.g-header > .head > img {
+    width: 200px;
+    height: 200px;
+}
+/** g-header end **/
+
+/** g-content **/
+.g-content {
+    padding: 0 50px;
+    width: auto;
+}
+.m-container {
+    width: 100%;
+}
+.m-container > .header {
+    margin-top: 20px;
+}
+.m-container > .header > .icon,
+.m-container > .header > .title {
+    height: 40px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #1488CC;
+    border-radius: 8px;
+}
+.m-container > .header > .icon {
+    margin-right: 6px;
+    width: 40px;
+    text-align: center;
+}
+.m-container > .header > .title {
+    padding-left: 30px;
+    width: 260px;
+    font-size: 20px;
+}
+.m-container > .container {
+    margin: 10px 20px;
+    line-height: 36px;
+}
+/* project */
+.m-project .date {
+    width: 150px;
+}
+.m-project .title > a{
+    color: #303133;
+}
+/* project end */
+/* skill */
+.skill {
+    list-style: disc inside;
+}
+.skill > li {
+
+    /* line-height: 36px; */
+}
+
+
+/* skill end */
+/** g-content end **/
+
+
+/* 浮动 */
+.u-fl {
+    float: left;
+}
+.u-fr {
+    float: right;
+}
+/* 清除浮动 */
+.u-clear {
+    *zoom: 1;
+}
+.u-clear:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both;
+}
+/* 特殊样式 */
+.u-cursor {
+    cursor: pointer;
+}
+.u-tag { /* 突出 */
+    padding: 0 4px;
+    margin: 0 2px;
+    font-size: 15px;
+    border: #DCDFE6 solid 1px;
+    border-radius: 5px;
+    background-color: #EBEEF5;
+}
+.u-bold { /* 加粗 */
+    font-weight: 800;
+}
+
+
+
+
+@media screen and (min-width:1200px) { 
+    
+} /* 大型设备（大台式电脑，1200px 起）设计宽度=1000 */
+
+@media screen and (min-width:992px) { 
+    
+} /* 中型设备（台式电脑，992px 起）设计宽度=768 */
+
+@media screen and (min-width:768px) { 
+    
+} /* 小型设备（平板电脑，768px 起）设计宽度=640 */
+
+@media screen and (min-width:480px) { 
+    
+} /* 超小设备（手机，小于 768px）设计宽度=100% */
+
+@media print {
+
+} /* 打印 */
+
