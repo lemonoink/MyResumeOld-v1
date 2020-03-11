@@ -3,6 +3,7 @@ const createHandler = require('github-webhook-handler');
 const handler = createHandler({path: '/***', secret: '******'});
 const spawn = require('child_process').spawn;
 
+// 需要修改 path, secret, PORT !
 const PORT = 0000;
 
 // Server
