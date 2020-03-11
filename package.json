@@ -1,0 +1,23 @@
+{
+  "name": "webhook",
+  "version": "1.0.0",
+  "description": "resume webhook - 实现服务器自动部署",
+  "main": "webhook.js",
+  "scripts": {
+    "test": "echo \"no test\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lemonoink/MyResume.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lemonoink/MyResume/issues"
+  },
+  "homepage": "https://github.com/lemonoink/MyResume#readme",
+  "dependencies": {
+    "github-webhook-handler": "^1.0.0"
+  }
+}
